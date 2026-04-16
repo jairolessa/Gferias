@@ -1,5 +1,6 @@
 package gov.Gferias.domain.vacation_balance.model;
 
+import gov.Gferias.domain.usersSumary.model.UsersSumary;
 import gov.Gferias.domain.vacation.model.Vacation;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -24,6 +25,7 @@ public class VacationBalance {
     @OneToMany(mappedBy = "vacationBalance")
     private List<Vacation> vacations = new ArrayList<>();
 
-    @Column(nullable = false, updatable = false)
-    private Long publicServer;
+    @ManyToOne
+    @JoinColumn(name = "users_sumary", nullable = false)
+    private UsersSumary usersSumary;
 }
