@@ -24,7 +24,7 @@ public class Vacation {
     private LocalDate endDate;
 
     @Column(nullable = false)
-    private Integer days;
+    private VacationDays days;
 
     @ManyToOne
     private VacationBalance vacationBalance;
