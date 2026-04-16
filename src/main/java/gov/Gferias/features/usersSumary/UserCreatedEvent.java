@@ -1,0 +1,13 @@
+package gov.Gferias.features.usersSumary;
+
+import lombok.Data;
+
+@Data
+public class UserCreatedEvent {
+
+    private Long id;
+    private String fullName;
+    private String cpf;
+    private String jobTitle;
+    private Boolean active;
+}
