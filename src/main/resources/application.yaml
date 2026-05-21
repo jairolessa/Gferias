@@ -1,12 +1,12 @@
 server:
-  port: ${SERVER_PORT}
+  port: ${PORT}
 
 spring:
   application:
     name: Gferias
 
   datasource:
-    url: ${DATA_SOUTCE_URL}
+    url: ${DATA_SOURCE_URL}
     driver-class-name: org.h2.Driver
     username: ${DATA_SOURSE_USERNAME}
     password:
